@@ -25,8 +25,9 @@ const hexCode = document.getElementById('hex')
 btnColor.addEventListener('click', changeColor)
 
 
+
 function changeColor(){
-    randomNum = Math.floor(Math.random() * colorsArr.length) // Get a random array with a color and its HEX code.
+    let randomNum = Math.floor(Math.random() * colorsArr.length) // Get a random array with a color and its HEX code.
     document.body.style.backgroundColor = colorsArr[randomNum][1]
     colorName.textContent = `${colorsArr[randomNum][0]}` // Changes the color name.
     hexCode.textContent = `${colorsArr[randomNum][1]}` // Changes the HEX code.
