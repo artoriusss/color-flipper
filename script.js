@@ -20,7 +20,7 @@ let colorsArr = [
 const btnColor = document.querySelector('#btn-color')
 const hexColor = document.querySelector('#hex-color')
 const colorName = document.querySelector('#color')
-const hexCode = document.querySelector('hex')
+const hexCode = document.querySelector('#hex')
 
 btnColor.addEventListener('click', changeColor)
 
