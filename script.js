@@ -17,14 +17,12 @@ let colorsArr = [
     ["aqua", "#00FFFF"]
 ]
 
-const btnColor = document.getElementById('btn-color')
-const hexColor = document.getElementById('hex-color')
-const colorName = document.getElementById('color')
-const hexCode = document.getElementById('hex')
+const btnColor = document.querySelector('#btn-color')
+const hexColor = document.querySelector('#hex-color')
+const colorName = document.querySelector('#color')
+const hexCode = document.querySelector('hex')
 
 btnColor.addEventListener('click', changeColor)
-
-
 
 function changeColor(){
     let randomNum = Math.floor(Math.random() * colorsArr.length) // Get a random array with a color and its HEX code.
