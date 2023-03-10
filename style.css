@@ -30,12 +30,17 @@ main{
     display: inline;
 }
 
-#color::first-letter{
-    text-transform: capitalize;
+#hex{
+    color: #FFFFFF;
 }
 
-#color, #hex{
+.copied{
     color: #FFFFFF;
+    visibility: hidden;
+}
+
+.active{
+    visibility: visible;
 }
 
 .buttons{
